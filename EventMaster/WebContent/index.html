@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Event Recommendation">
+  <meta name="author" content="Yutong Sun">
+  <title>Event Master Final</title>
+  <link href="https://fonts.googleapis.com/css?family=Carter+One|Radley" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="logout">Logout</a>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>Event</span>
+        <br /> Master
+      </p>
+    </header>
+
+    <section class="main-section">
+    
+    <!-- log-in/sign-up page -->
+     <div id="login-form">
+ 	    <label for="username">Username:</label>
+ 	    <input id="username" name="username" type="text">
+ 	    <label for="password">Password:</label>
+ 	    <input id="password" name="password" type="password">
+ 	    <button id="login-btn">Login</button>
+ 	    <button id="signup-btn">Signup</button>
+ 	    <p id="login-signin-error"></p>
+ 	    
+      </div>
+      
+      <!-- contact page -->
+      <!-- <div id="contact">
+ 	   
+ 	    <p id="contact-paragraph">If you are interested in our service, please contact:
+             </p>
+            <p id="email">ysun52dd@ucla.edu</p>
+      </div> -->
+    
+      <aside id="item-nav">
+        <div class="nav-icon">
+          <i class="fa fa-sitemap fa-2x"></i>
+        </div>
+        <nav class="main-nav">
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Nearby
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> My Favorites
+          </a>
+          <a href="#" id="recommend-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommendation
+          </a>
+        </nav>
+      </aside>
+
+      <ul id="item-list">
+        <li class="item">
+          <img alt="item image" src="https://images.pexels.com/photos/1020322/pexels-photo-1020322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+          <div>
+            <a class="item-name" href="#">Item</a>
+            <p class="item-category">Sport</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
+          <div class="fav-link">
+            <i class="fa fa-heart"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <footer>
+    <p class="title">What We Do</p>
+    <p>"Help you find some fun stuff around."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Los Angeles, CA</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>©EventMaster</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 (310) 307 9626</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+<!--   <script src="scripts/mock.js"></script> -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
